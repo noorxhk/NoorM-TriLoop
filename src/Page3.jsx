@@ -16,11 +16,11 @@ export default function Page3() {
         <Grid item spacing={16} container direction="column">
           <Grid item />
           <Grid item container spacing={10}>
-            <Grid item xs={1} />
-            <Grid item xs={2}>
+            <Grid item xs={12} md={1} />
+            <Grid item xs={12} md={2}>
               <Button variant="contained"> About us </Button>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Typography variant="h2" >
                 <b>
                   <span className="span">W</span>
@@ -35,11 +35,11 @@ export default function Page3() {
         <Grid item spacing={5} container direction="column">
           <Grid item />
           <Grid item container spacing={5}>
-            <Grid item xs={1} />
-            <Grid item xs={2}>
+            <Grid item xs={12} md={1} />
+            <Grid item xs={12} md={2}>
               <Paper style={{ height: "100%", width: "100%" }}></Paper>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8}>
               <Typography variant="p" >
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
                 velit vitae magnam aperiam sapiente cupiditate adipisci ducimus
@@ -71,8 +71,8 @@ export default function Page3() {
               </Typography>
             </Grid>
 
-            <Grid item xs={10} />
-            <Grid item xs={2}>
+            <Grid item xs={12} md={10} />
+            <Grid item xs={12} md={2}>
               <Button variant="contained"> Explore </Button>
             </Grid>
           </Grid>

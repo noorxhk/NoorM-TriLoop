@@ -28,12 +28,17 @@
 }
 .customtextfield{
   
-  outline: 0;
-  border-width: 0 0 4px;
-  border-color: white
+  
+  color:white !important;
+  border-bottom: white !important;
+  
+  
+
+  
   
   
 }
+
 .bodyWhite{
   background-color: white;
   color: black;

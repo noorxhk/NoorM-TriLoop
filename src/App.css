@@ -10,7 +10,11 @@
 .span{
   background-color: #1f69bd;
 }
-
+.btn{
+  border-color: white;
+  background-color: black;
+  color: white;
+}
 
 .App-logo {
   height: 40vmin;

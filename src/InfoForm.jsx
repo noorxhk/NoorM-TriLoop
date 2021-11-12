@@ -5,11 +5,13 @@ import "@fontsource/roboto/300.css";
 import TextField from "@mui/material/TextField";
 
 import { styled } from '@mui/system';
+import { Button } from "@mui/material";
 
 
 const StyledTextField = styled(TextField)`
   .MuiInput-underline::before {
     border-bottom-color: white;
+    border-width: 2px;
   }
   .MuiInput-underline:hover:not(.Mui-disabled)::before {
     border-bottom-color: white;
@@ -18,7 +20,27 @@ const StyledTextField = styled(TextField)`
     border-bottom-color: white;
   }
 `;
-
+const StyledButton = styled(Button)`
+ 
+  background-color: black;
+  color: #fff;
+  padding: 6px 50px;  
+  
+  border-color:white;
+  border-radius:150px;
+  border-width: 2px
+;
+  
+  
+  &:hover {
+    background-color: grey;
+    color: white;
+  }
+  &:focus {
+    background-color: grey;
+    color : black
+  }
+`;
 export default function InfoForm() {
   return (
     <div className="bodyBlack">
@@ -97,6 +119,16 @@ export default function InfoForm() {
             margin="normal"
           ></StyledTextField>
         </Grid>
+      </Grid>
+      <Grid container direction="column" spacing={5}>
+        <Grid item xs={12} md={6}/ >
+          <Grid item  container>
+            <Grid item xs={6} md={6}/>
+            <Grid item xs={5} md={3}>
+            <StyledButton variant="outlined"> Send</StyledButton>
+            </Grid>
+
+          </Grid>
       </Grid>
     </div>
   );

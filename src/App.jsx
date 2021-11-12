@@ -4,11 +4,8 @@ import InfoForm from "./InfoForm";
 function App() {
   return (
     <>
-      <Page3 />    
-
-      <InfoForm/>
-      
-      
+      <Page3 />
+      <InfoForm />
     </>
   );
 }

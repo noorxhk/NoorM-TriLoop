@@ -21,7 +21,7 @@ export default function Page3() {
               <Button variant="contained"> About us </Button>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography variant="h2" >
+              <Typography variant="h2">
                 <b>
                   <span className="span">W</span>
                   hat is <br />
@@ -40,7 +40,7 @@ export default function Page3() {
               <Paper style={{ height: "100%", width: "100%" }}></Paper>
             </Grid>
             <Grid item xs={12} md={8}>
-              <Typography variant="p" >
+              <Typography variant="p">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
                 velit vitae magnam aperiam sapiente cupiditate adipisci ducimus
                 unde cumque quidem mollitia, tenetur at qui iste facere ex alias

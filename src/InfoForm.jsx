@@ -4,9 +4,8 @@ import Typography from "@mui/material/Typography";
 import "@fontsource/roboto/300.css";
 import TextField from "@mui/material/TextField";
 
-import { styled } from '@mui/system';
+import { styled } from "@mui/system";
 import { Button } from "@mui/material";
-
 
 const StyledTextField = styled(TextField)`
   .MuiInput-underline::before {
@@ -21,24 +20,21 @@ const StyledTextField = styled(TextField)`
   }
 `;
 const StyledButton = styled(Button)`
- 
   background-color: black;
   color: #fff;
-  padding: 6px 50px;  
-  
-  border-color:white;
-  border-radius:150px;
-  border-width: 2px
-;
-  
-  
+  padding: 6px 50px;
+
+  border-color: white;
+  border-radius: 150px;
+  border-width: 2px;
+
   &:hover {
     background-color: grey;
     color: white;
   }
   &:focus {
     background-color: grey;
-    color : black
+    color: black;
   }
 `;
 export default function InfoForm() {
@@ -62,23 +58,24 @@ export default function InfoForm() {
 
         <Grid item xs={12} md={2}>
           <StyledTextField
-          
             fullWidth
             variant="standard"
             label="First Name"
             InputLabelProps={{ className: "customtextfield" }}
             InputProps={{ className: "customtextfield" }}
             margin="normal"
-            InputProps={{classes:{
-              root:{
-                '& .MuiInputBase-input': {
-                  color: '#fff', // Text color
+            InputProps={{
+              classes: {
+                root: {
+                  "& .MuiInputBase-input": {
+                    color: "#fff", // Text color
+                  },
+                  "& .MuiInput-underline:before": {
+                    borderBottomColor: "#fff", // Semi-transparent underline
+                  },
                 },
-                '& .MuiInput-underline:before': {
-                  borderBottomColor: '#fff', // Semi-transparent underline
-                }
-              }
-            }}}
+              },
+            }}
           />
         </Grid>
         <Grid item xs={12} md={1} />
@@ -106,7 +103,7 @@ export default function InfoForm() {
           ></StyledTextField>
         </Grid>
         <Grid item xs={12} md={4} />
-        
+
         <Grid item xs={12} md={5}>
           <StyledTextField
             fullWidth
@@ -121,14 +118,13 @@ export default function InfoForm() {
         </Grid>
       </Grid>
       <Grid container direction="column" spacing={5}>
-        <Grid item xs={12} md={6}/ >
-          <Grid item  container>
-            <Grid item xs={6} md={6}/>
-            <Grid item xs={5} md={3}>
+        <Grid item xs={12} md={6} />
+        <Grid item container>
+          <Grid item xs={6} md={6} />
+          <Grid item xs={5} md={3}>
             <StyledButton variant="outlined"> Send</StyledButton>
-            </Grid>
-
           </Grid>
+        </Grid>
       </Grid>
     </div>
   );

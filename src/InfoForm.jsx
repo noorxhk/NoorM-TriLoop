@@ -3,7 +3,6 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import "@fontsource/roboto/300.css";
 import TextField from "@mui/material/TextField";
-
 import { styled } from "@mui/system";
 import { Button } from "@mui/material";
 
@@ -27,6 +26,7 @@ const StyledButton = styled(Button)`
   border-color: white;
   border-radius: 150px;
   border-width: 2px;
+  
 
   &:hover {
     background-color: grey;
@@ -45,7 +45,7 @@ export default function InfoForm() {
         <Grid item xs={12} md={6}>
           <Typography variant="h1">
             <br></br>
-            <b>
+            <b><x></x>
               <span className="span">H</span>
               ave Some Questions
             </b>
@@ -71,7 +71,7 @@ export default function InfoForm() {
                     color: "#fff", // Text color
                   },
                   "& .MuiInput-underline:before": {
-                    borderBottomColor: "#fff", // Semi-transparent underline
+                    borderBottomColor: "#fff", 
                   },
                 },
               },
@@ -122,7 +122,7 @@ export default function InfoForm() {
         <Grid item container>
           <Grid item xs={6} md={6} />
           <Grid item xs={5} md={3}>
-            <StyledButton variant="outlined"> Send</StyledButton>
+            <StyledButton variant="outlined" style={{textTransform:"none"}}> Send</StyledButton>
           </Grid>
         </Grid>
       </Grid>

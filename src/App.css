@@ -1,54 +1,33 @@
 .App {
   text-align: center;
- 
 }
 
-
-  
-  
-
-.span{
+.span {
   background-color: #1f69bd;
-}
-.btn{
-  border-color: white;
-  background-color: black;
-  color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-.bodyBlack{
-  
+.bodyBlack {
   background-color: black;
   color: white;
   height: 100vh;
   width: 100%;
-  overflow:auto;
-  
-  
+  overflow: auto;
 }
-.customtextfield{
-  
-  
-  color:white !important;
+.customtextfield {
+  color: white !important;
   border-bottom: white !important;
-  
-  
-
-  
-  
-  
 }
 
-.bodyWhite{
+.bodyWhite {
   background-color: white;
   color: black;
   height: 100vh;
   width: 100%;
-  overflow:auto;
+  overflow: auto;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

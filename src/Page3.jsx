@@ -18,7 +18,7 @@ export default function Page3() {
           <Grid item container spacing={10}>
             <Grid item xs={12} md={1} />
             <Grid item xs={12} md={2}>
-              <Button variant="contained"> About us </Button>
+              <Button variant="contained" style={{textTransform:"none"}}> About Us </Button>
             </Grid>
             <Grid item xs={12} md={6}>
               <Typography variant="h2">
@@ -73,7 +73,7 @@ export default function Page3() {
 
             <Grid item xs={12} md={10} />
             <Grid item xs={12} md={2}>
-              <Button variant="contained"> Explore </Button>
+              <Button variant="contained" style={{textTransform:"none"}}> Explore </Button>
             </Grid>
           </Grid>
         </Grid>
